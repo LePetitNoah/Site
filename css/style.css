@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/**********************************************************************************HEADER**********************************************************************************/
+
+header{
+    background-color: beige;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #171219;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header nav>:nth-child(2n){
+    padding-right: 30px;
+}
+
+header nav>:nth-child(2n-1){
+    padding-left: 30px;
+}
+
+header>nav>ul{
+    display: flex;
+}
+
+header>nav>ul>li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 34px;
+    padding: 15px;
+    list-style-type: none;
+    
+}
+
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: beige;
+}
+
+header>nav>ul>li>a:hover{
+    text-shadow: beige 1px 0 10px;
+}
+
+header h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 59px;
+    padding: 15px;
+    padding-bottom: 0px;
+    color: #171219;
+    margin-top: 71px;
+}
+
+.navArticle{
+    position: relative;
+}
+
+.navArticle ul{
+    display: none;
+    position: absolute;
+    width: 86px;
+    top: 60px;
+    right: 0px;
+    background-color: #171219;
+}
+
+.navArticle:hover ul{
+    display:initial;
+}
+
+.navArticle ul li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    padding: 4px;
+    list-style-type: none;
+}
+
+.navArticle ul li a{
+    color : beige;
+    text-decoration: none;
+}
+
+.navArticle ul li a:hover{
+    text-shadow: beige 1px 0 10px;
+}
+
+/**********************************************************************************MAIN**********************************************************************************/
+
+main{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main section{
+    width: 80%;
+    height: 25%;
+    border: #171219 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #171219;
+}
+
+main section:nth-child(1) img{
+    width: 45%;
+    height: 45%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main section:nth-child(2) img{
+    width: 30%;
+    height: 60%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main section:nth-child(3) img{
+    width: 30%;
+    height: 60%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main section:nth-child(4) img{
+    width: 30%;
+    height: 65%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main section:nth-child(5) img{
+    width: 45%;
+    height: 45%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main section p{
+    font-size: 18px;
+    color: beige;
+}
+
+main section:nth-child(2n-1) img{
+    float: left;
+}
+
+main section:nth-child(2n) img{
+    float: right;
+}
+
+main table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+main table tr:hover{
+    background-color: rgb(187, 109, 53);
+}
+
+main table tr th{
+    font-size: 30px;
+    height: 40px;
+}
+
+main table, th, td, tr{
+    border: 1px solid;
+}
+
+main table tr td{
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.mainAside{
+    display: flex;
+    flex-direction: row;
+}
+
+/**********************************************************************************ASIDE**********************************************************************************/
+
+aside{
+    width: 30%;
+    background-color: #171219;
+    text-align: center;
+}
+
+aside section{
+    padding-top: 20px;
+    padding-bottom: 200px;
+}
+
+aside section:first-child{
+    padding-top: 100px;
+}
+
+aside section:nth-child(1) img{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+aside section img{
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+aside section p{
+    font-size: 18px;
+    color: beige;
+    padding: 20px;
+}
+
+aside section a{
+    color: beige;
+}
+
+/**********************************************************************************FOOTER**********************************************************************************/
+
+footer{
+    background-color: #171219;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 35px;
+}
+
+footer div{
+    width: 33%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+footer div a{
+    color: beige;
+}
+
+footer div p{
+    font-size: 26px;
+    padding-bottom: 15px;
+    color: beige;
+}
+
+.footerArticles{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerArticles ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footerArticles ul li{
+    padding-top: 15px;
+    font-size: 20px;
+    list-style-type: none;
+
+}
